@@ -10,15 +10,15 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WebMapNet | SEO, Google Ads &amp; Websites for Trucking Companies</title>
-<meta name="description" content="WebMapNet works only with trucking companies: more CDL driver applications and freight leads from Google with SEO, Google Ads, Google Business Profile and websites. Free site check.">
+<title>WebMapNet | SEO, Google Ads, Google Maps &amp; Networks for Trucking Companies</title>
+<meta name="description" content="WebMapNet works only with trucking companies: SEO and Google Ads for driver applications and freight leads, Google Maps profiles and Maps ads for every terminal, and networks, Wi-Fi and cameras for yards and shops. Free site check.">
 <link rel="canonical" href="https://webmapnet.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0b1f33">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webmapnet.com/">
-<meta property="og:title" content="WebMapNet | SEO, Google Ads &amp; Websites for Trucking Companies">
-<meta property="og:description" content="More CDL driver applications and freight leads from Google. Free site check for trucking companies.">
+<meta property="og:title" content="WebMapNet | SEO, Google Ads, Google Maps &amp; Networks for Trucking Companies">
+<meta property="og:description" content="SEO + Google Ads, Google Maps and networks for trucking companies. Free site check.">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
 {
@@ -28,10 +28,12 @@
   "url": "https://webmapnet.com/",
   "logo": "https://webmapnet.com/favicon.svg",
   "email": "rafis@webmapnet.com",
-  "description": "SEO, Google Ads, Google Business Profile and websites for trucking companies: more CDL driver applications and freight leads from Google.",
-  "areaServed": "US",
+  "telephone": "+1-630-259-0972",
+  "contactPoint": {"@type": "ContactPoint", "telephone": "+1-630-259-0972", "contactType": "sales", "availableLanguage": ["English", "Russian"]},
+  "description": "Three services for trucking companies: SEO and Google Ads for CDL driver applications and freight leads; Google Maps profiles and Maps ads for terminals; networks, Wi-Fi, security cameras and website care for yards, shops and offices.",
+  "areaServed": [{"@type": "Country", "name": "United States"}, {"@type": "AdministrativeArea", "name": "Chicago metropolitan area, Illinois"}],
   "audience": {"@type": "BusinessAudience", "audienceType": "Trucking companies, motor carriers and owner-operators"},
-  "knowsAbout": ["Trucking company SEO", "CDL driver recruiting", "Google Ads", "Google Business Profile", "Website administration"],
+  "knowsAbout": ["Trucking company SEO", "CDL driver recruiting", "Google Ads", "Google Business Profile", "Google Maps ads", "Structured cabling", "Wi-Fi networks", "IP security cameras", "Website administration"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Services",
@@ -42,7 +44,10 @@
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Growth monthly SEO"}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "900", "priceCurrency": "USD", "unitText": "MONTH"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google Ads management"}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "400", "priceCurrency": "USD", "unitText": "MONTH"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website care"}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "250", "priceCurrency": "USD", "unitText": "MONTH"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Monitoring"}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "75", "priceCurrency": "USD", "unitText": "MONTH"}}
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Monitoring"}, "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "75", "priceCurrency": "USD", "unitText": "MONTH"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google Business Profile setup and management"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google Maps ads"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Network, Wi-Fi and security camera installation", "areaServed": "Chicago metropolitan area"}}
     ]
   }
 }
@@ -58,7 +63,7 @@ header{position:sticky;top:0;background:rgba(255,255,255,.95);border-bottom:1px 
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
 .brand svg{width:30px;height:30px}
-.nav nav a{color:var(--ink2);text-decoration:none;margin-left:22px;font-size:15px}
+.nav nav a{color:var(--ink2);text-decoration:none;margin-left:18px;font-size:15px}
 .nav nav a.btn{color:#fff}
 .btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
@@ -71,24 +76,40 @@ section{padding:72px 0}
 section.alt{background:var(--bg)}
 h2{font-size:clamp(26px,3.4vw,36px);margin:0 0 12px;letter-spacing:-.3px}
 .lead{color:var(--ink2);max-width:720px;margin:0 0 36px}
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr))}
 .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column}
 .card h3{margin:0 0 8px;font-size:19px}
 .card p{margin:0;color:var(--ink2);font-size:16px}
 .card ul{margin:12px 0 0;padding-left:18px;color:var(--ink2);font-size:15px}
 .card .price{margin-top:auto;padding-top:16px;font-weight:700;font-size:18px}
 .card .price small{font-weight:400;color:var(--ink2);font-size:14px}
-.grid.tight{grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px}
+.grid.tight{grid-template-columns:repeat(auto-fit,minmax(min(185px,100%),1fr));gap:14px}
 .grid.tight .card{padding:20px}
+.dirs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));margin-top:44px}
+.dir{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:var(--ink)}
+.dir:hover{border-color:var(--acc)}
+.dir b{display:block;font-size:19px;margin:6px 0 4px}
+.dir span{color:var(--ink2);font-size:15px}
+.dir i{font-style:normal;font-size:13px;font-weight:700;color:var(--acc)}
+.dirhead{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
+.dirhead .num{font-weight:700;color:var(--acc);font-size:15px;white-space:nowrap}
+.btn.wa{background:#1fa855}
+.btn.call{background:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.nav .phone{color:var(--ink);font-weight:600}
+.contact .btns .btn{background:#fff;color:var(--ink)}
+.contact .btns .btn.wa{background:#1fa855;color:#fff}
+.mbar{display:none}
+@media (max-width:720px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}.mbar a{flex:1;background-clip:padding-box;text-align:center;padding:12px 0}body{padding-bottom:72px}}
 .card.featured{border:2px solid var(--acc)}
 .tag{align-self:flex-start;font-size:13px;font-weight:600;color:var(--acc);background:var(--acc2);border-radius:20px;padding:3px 10px;margin-bottom:12px}
 .sub{font-size:20px;margin:40px 0 16px}
-.steps{counter-reset:s;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps{counter-reset:s;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
 .step{padding:24px;border-top:3px solid var(--acc);background:#fff;border-radius:0 0 12px 12px;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 .step:before{counter-increment:s;content:counter(s);font-weight:700;color:var(--acc);font-size:28px;display:block;margin-bottom:6px}
 .step h3{margin:0 0 6px;font-size:18px}
 .step p{margin:0;color:var(--ink2);font-size:16px}
-.finds{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));padding:0;margin:0;list-style:none}
+.finds{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));padding:0;margin:0;list-style:none}
 .finds li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 44px;position:relative;font-size:16px}
 .finds li:before{content:"!";position:absolute;left:14px;top:13px;width:20px;height:20px;border-radius:50%;background:#fdecec;color:#b42318;font-weight:700;font-size:13px;text-align:center;line-height:20px}
 .check{display:grid;gap:28px;grid-template-columns:1.1fr 1fr;align-items:start}
@@ -97,7 +118,7 @@ h2{font-size:clamp(26px,3.4vw,36px);margin:0 0 12px;letter-spacing:-.3px}
 .check .box{background:#fff;border:2px solid var(--acc);border-radius:14px;padding:28px}
 .check .box h3{margin:0 0 8px;font-size:22px}
 .check .box p{color:var(--ink2);margin:0 0 18px}
-.promise{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.promise{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
 .promise div{padding-left:16px;border-left:3px solid var(--acc)}
 .promise h3{margin:0 0 4px;font-size:18px}
 .promise p{margin:0;color:var(--ink2);font-size:16px}
@@ -109,7 +130,14 @@ h2{font-size:clamp(26px,3.4vw,36px);margin:0 0 12px;letter-spacing:-.3px}
 footer{padding:28px 0;color:var(--ink2);font-size:14px;border-top:1px solid var(--line)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (max-width:800px){.check{grid-template-columns:1fr}}
-@media (max-width:720px){.nav nav a:not(.btn){display:none}.hero{padding:56px 0 48px}section{padding:52px 0}.contact{padding:32px}}
+.nav nav{display:flex;align-items:center;white-space:nowrap}
+.nav nav a{padding:10px 0}
+.nav nav a.btn{padding:10px 18px}
+@media (max-width:1180px){.nav .email{display:none}}
+@media (max-width:980px){.nav nav a:not(.btn):not(.tel){display:none}}
+@media (max-width:720px){.nav nav a.tel{display:none}.nav nav a.btn{padding:9px 14px;font-size:14px}.brand{font-size:18px}.hero .ctas .btn{flex:1 1 auto;text-align:center}.contact .btns{width:100%}.contact .btns .btn{flex:1 1 auto;text-align:center}}
+@media (max-width:380px){.nav .long{display:none}.wrap{padding:0 16px}.mbar{gap:6px;padding-left:8px;padding-right:8px}.mbar a{font-size:15px}.contact{padding:24px}.card{padding:20px}}
+@media (max-width:720px){.hero{padding:56px 0 48px}section{padding:52px 0}.contact{padding:32px}}
 </style>
 </head>
 <body>
@@ -120,10 +148,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       WebMapNet
     </a>
     <nav>
-      <a href="#services">Services</a>
+      <a href="#seo-ads">SEO + Ads</a>
+      <a href="#maps">Google Maps</a>
+      <a href="#network">Network</a>
       <a href="#pricing">Pricing</a>
-      <a href="#how">How we work</a>
-      <a class="btn" href="#check">Free site check</a>
+      <a class="phone email" href="mailto:rafis@webmapnet.com?subject=Trucking%20marketing">rafis@webmapnet.com</a>
+      <a class="phone tel" href="tel:+16302590972">(630) 259-0972</a>
+      <a class="btn" href="#check">Free<span class="long"> site</span> check</a>
     </nav>
   </div>
 </header>
@@ -131,27 +162,67 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <main>
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow">Marketing for trucking companies only</span>
+    <span class="eyebrow">For trucking companies only</span>
     <h1>More CDL driver applications and freight leads from Google</h1>
-    <p>We work only with trucking companies. Drivers and shippers search Google first. We make sure they find your company, trust what they see and call you, not the carrier next door.</p>
+    <p>We work only with trucking companies. Drivers and shippers search Google first. We make sure they find your company, trust what they see and call you, not the carrier next door. And we keep the network behind it all running.</p>
     <div class="ctas">
       <a class="btn" href="#check">Get a free site check</a>
       <a class="btn ghost" href="#pricing">See pricing</a>
     </div>
+    <div class="dirs">
+      <a class="dir" href="#seo-ads"><i>01</i><b>SEO + Google Ads</b><span>Driver applications and freight leads from Google search and ads.</span></a>
+      <a class="dir" href="#maps"><i>02</i><b>Google Maps</b><span>Every terminal on the map, with the right phone, reviews and Maps ads.</span></a>
+      <a class="dir" href="#network"><i>03</i><b>Network</b><span>Cabling, Wi-Fi, cameras and website care for yards, shops and offices.</span></a>
+    </div>
   </div>
 </section>
 
-<section id="services">
+<section id="seo-ads">
   <div class="wrap">
-    <h2>What we do for carriers</h2>
-    <p class="lead">One team for the whole online side of a trucking company: driver recruiting, freight leads and the technical care that keeps your site working.</p>
+    <div class="dirhead"><span class="num">01</span><h2>SEO + Google Ads</h2></div>
+    <p class="lead">Search brings steady applications month after month. Ads bring them this week. We run both on one plan and count the results in applications and calls.</p>
     <div class="grid">
       <div class="card"><h3>Driver recruiting from search</h3><p>Job pages with pay, routes, home time and requirements, written the way CDL drivers search, so your openings show up when drivers look for work.</p></div>
       <div class="card"><h3>Google Ads for hiring and freight</h3><p>Ads for driver jobs and for shippers in your lanes. Measured by applications and calls, not clicks, with your budget under your control.</p></div>
-      <div class="card"><h3>Local SEO &amp; Google Business Profile</h3><p>Correct name, phone and categories, regular hiring posts and review replies, so your terminal shows up on the map and in local search.</p></div>
       <div class="card"><h3>Freight lead pages</h3><p>Service and lane pages for shippers and brokers, so the same website brings loads, not only drivers.</p></div>
+      <div class="card"><h3>Technical SEO</h3><p>Search can see every page, titles and descriptions are right, the site is fast on a phone, and no other company's name or phone is left on it.</p></div>
       <div class="card"><h3>Applications counted</h3><p>Analytics and call tracking on every site, so you see how many applications and calls each channel brings each month.</p></div>
-      <div class="card"><h3>Website care &amp; new sites</h3><p>Domain, SSL, hosting, updates, backups and business email. And new websites built for search from day one, when the old one is past fixing.</p></div>
+      <div class="card"><h3>New websites</h3><p>When the old site is past fixing, we build a new one made for search from day one: job pages, application form and analytics included.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="maps">
+  <div class="wrap">
+    <div class="dirhead"><span class="num">02</span><h2>Google Maps</h2></div>
+    <p class="lead">Drivers often search "CDL jobs near me" right on the map. A complete Google profile for each terminal is the fastest way to get calls, often before SEO starts to work.</p>
+    <div class="grid">
+      <div class="card"><h3>Profile setup and verification</h3><p>A Google Business Profile for every terminal, yard and shop: correct name, address or service area, phone, hours and categories.</p></div>
+      <div class="card"><h3>Hiring posts and photos</h3><p>Regular posts about open driver jobs, real photos of trucks and terminals, so the profile looks alive and drivers call.</p></div>
+      <div class="card"><h3>Reviews</h3><p>A simple way to ask drivers and customers for reviews, and a reply to every review, good or bad.</p></div>
+      <div class="card"><h3>Google Maps ads</h3><p>Your terminal shown as an ad on the map and in local results to drivers and shippers nearby, linked to your Google profile.</p></div>
+      <div class="card"><h3>Same data everywhere</h3><p>Name, phone and address match on the website, Google and directories, so Google trusts the listing and nobody calls the wrong number.</p></div>
+      <div class="card"><h3>Calls from the map counted</h3><p>Monthly numbers from the profile: calls, direction requests and website clicks for each location.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="network">
+  <div class="wrap">
+    <div class="dirhead"><span class="num">03</span><h2>Network</h2></div>
+    <p class="lead">Dispatch, ELD, cameras and the office all depend on the network. We build it and look after it on site in the Chicago area, and keep your domain, email and website working remotely.</p>
+    <div class="grid">
+      <div class="card"><h3>Cabling</h3><p>Cat6 and fiber for offices, shops, server rooms and gate houses, labeled and tested.</p></div>
+      <div class="card"><h3>Wi-Fi for yard, shop and office</h3><p>Access points placed so drivers, mechanics and office staff have a working signal where they actually stand.</p></div>
+      <div class="card"><h3>Security cameras</h3><p>IP cameras for yards, gates, fuel islands and shop bays, with recording and viewing from your phone.</p></div>
+      <div class="card"><h3>Server room and equipment</h3><p>Racks, switches, firewalls and backup power set up and documented, so the next person knows what is where.</p></div>
+      <div class="card"><h3>Website care</h3><p>Domain, DNS, SSL and hosting, WordPress and plugin updates, backups, security and business email that does not land in spam.</p></div>
+      <div class="card"><h3>Monitoring</h3><p>24/7 checks of your website, domain and SSL expiry, with an alert before anything goes down.</p></div>
+    </div>
+    <div class="btns" style="margin-top:24px">
+      <a class="btn" href="mailto:rafis@webmapnet.com?subject=Network%20quote&amp;body=Address%3A%20%0AWhat%20we%20need%20(cabling%2C%20Wi-Fi%2C%20cameras)%3A%20">Request a network quote</a>
+      <a class="btn call" href="tel:+16302590972">Call (630) 259-0972</a>
+      <a class="btn wa" href="https://wa.me/16302590972?text=Hi%20WebMapNet%2C%20I%20need%20a%20network%20quote.%20Address%3A%20" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 </section>
@@ -190,7 +261,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="box">
       <h3>Get your free check</h3>
       <p>Send your website address and what you want more of: driver applications, freight leads or calls. No access to your site needed.</p>
-      <a class="btn" href="mailto:rafis@webmapnet.com?subject=Free%20site%20check&amp;body=Website%3A%20%0AWhat%20we%20want%20more%20of%3A%20">Request a free check</a>
+      <div class="btns">
+        <a class="btn" href="mailto:rafis@webmapnet.com?subject=Free%20site%20check&amp;body=Website%3A%20%0AWhat%20we%20want%20more%20of%3A%20">Request a free check</a>
+        <a class="btn wa" href="https://wa.me/16302590972?text=Hi%20WebMapNet%2C%20I%27d%20like%20a%20free%20site%20check.%20Website%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
   </div>
 </section>
@@ -198,23 +272,32 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section class="alt" id="pricing">
   <div class="wrap">
     <h2>Pricing</h2>
-    <p class="lead">Priced per website. The exact price comes after the audit, because every site needs a different amount of work. A bigger budget means more hours on your site and faster results.</p>
+    <p class="lead">SEO, Maps and website care are priced per website. The exact price comes after the audit, because every site needs a different amount of work. A bigger budget means more hours on your site and faster results.</p>
 
-    <h3 class="sub">Monthly</h3>
+    <h3 class="sub">01 · SEO + Google Ads</h3>
     <div class="grid tight">
-      <div class="card"><span class="tag">Keep it running</span><h3>Monitoring</h3><ul><li>24/7 uptime checks and alerts</li><li>Domain and SSL expiry tracking</li><li>Short monthly report</li></ul><div class="price">from $75 <small>/ month</small></div></div>
-      <div class="card"><span class="tag">Keep it running</span><h3>Website care</h3><ul><li>Domain, DNS, SSL and hosting</li><li>WordPress and plugin updates, backups</li><li>Security, access and business email</li></ul><div class="price">from $250 <small>/ month</small></div></div>
+      <div class="card"><span class="tag">Start here</span><h3>Start</h3><ul><li>Full audit of the site and Google profile</li><li>Google Analytics and Search Console setup</li><li>Call and application tracking</li></ul><div class="price">from $450 <small>one-time</small></div></div>
       <div class="card"><span class="tag">Get found</span><h3>Basic</h3><ul><li>Monitoring</li><li>Google Business Profile management</li><li>Technical SEO</li><li>Report on calls and applications</li></ul><div class="price">from $450 <small>/ month</small></div></div>
       <div class="card featured"><span class="tag">Most growth</span><h3>Growth</h3><ul><li>Everything in Basic</li><li>1 new SEO page every month</li><li>More driver applications from job search</li><li>Review management</li></ul><div class="price">from $900 <small>/ month</small></div></div>
       <div class="card"><span class="tag">Fast results</span><h3>Google Ads</h3><ul><li>Driver hiring and freight campaigns</li><li>Targeted to your hiring area and lanes</li><li>Call and application tracking</li><li>Monthly report: cost per application</li></ul><div class="price">from $400 <small>/ month + ad spend</small></div></div>
     </div>
-
-    <h3 class="sub">One-time</h3>
-    <div class="grid tight">
-      <div class="card"><span class="tag">Start here</span><h3>Start</h3><ul><li>Full audit of the site and Google profile</li><li>Google Analytics and Search Console setup</li><li>Call and application tracking</li></ul><div class="price">from $450</div></div>
+    <div class="grid tight" style="margin-top:14px">
       <div class="card"><h3>Page on your current design</h3><ul><li>Job, service, city or FAQ page</li><li>Text and SEO included</li></ul><div class="price">from $300</div></div>
       <div class="card"><h3>New page with its own design</h3><ul><li>About, Careers, application form</li><li>Text and SEO included</li></ul><div class="price">from $600</div></div>
       <div class="card"><h3>Home page of a new website</h3><ul><li>Design for the whole site</li><li>Mobile version, application form, analytics</li></ul><div class="price">from $1,200</div></div>
+    </div>
+
+    <h3 class="sub">02 · Google Maps</h3>
+    <div class="grid tight">
+      <div class="card"><h3>Google profile management</h3><ul><li>Setup and verification</li><li>Hiring posts, photos, reviews</li><li>Monthly calls report</li></ul><div class="price">in Basic <small>from $450 / month</small></div></div>
+      <div class="card"><h3>Google Maps ads</h3><ul><li>Your terminal on the map as an ad</li><li>Drivers and shippers nearby</li><li>Calls counted</li></ul><div class="price">in Google Ads <small>from $400 / month + ad spend</small></div></div>
+    </div>
+
+    <h3 class="sub">03 · Network</h3>
+    <div class="grid tight">
+      <div class="card"><span class="tag">Keep it running</span><h3>Monitoring</h3><ul><li>24/7 uptime checks and alerts</li><li>Domain and SSL expiry tracking</li><li>Short monthly report</li></ul><div class="price">from $75 <small>/ month</small></div></div>
+      <div class="card"><span class="tag">Keep it running</span><h3>Website care</h3><ul><li>Domain, DNS, SSL and hosting</li><li>WordPress and plugin updates, backups</li><li>Security, access and business email</li></ul><div class="price">from $250 <small>/ month</small></div></div>
+      <div class="card"><span class="tag">On site</span><h3>Cabling, Wi-Fi, cameras</h3><ul><li>Chicago area</li><li>Site visit and written estimate first</li><li>Equipment registered to your company</li></ul><div class="price">quote <small>after site visit</small></div></div>
     </div>
     <p class="note">A new website = home page + the pages you need. Domain and hosting are paid separately and registered to your company. Basic and Growth start after Start: without analytics there is no way to show results.</p>
   </div>
@@ -248,25 +331,34 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="contact">
       <div>
-        <h2>Let's talk about your hiring</h2>
-        <p>Tell us how many drivers you need and where. We will reply with next steps.</p>
+        <h2>Let's talk</h2>
+        <p>Tell us what you need: drivers, freight leads, your terminals on Google Maps, or a network, Wi-Fi or cameras at your yard. Call, message us on WhatsApp or email.</p>
       </div>
-      <a class="btn" href="mailto:rafis@webmapnet.com?subject=Trucking%20marketing">rafis@webmapnet.com</a>
+      <div class="btns">
+        <a class="btn" href="tel:+16302590972">Call (630) 259-0972</a>
+        <a class="btn wa" href="https://wa.me/16302590972?text=Hi%20WebMapNet%2C%20" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="mailto:rafis@webmapnet.com?subject=Trucking%20marketing">rafis@webmapnet.com</a>
+      </div>
     </div>
   </div>
 </section>
 </main>
+<div class="mbar"><a class="btn call" href="tel:+16302590972">Call</a><a class="btn wa" href="https://wa.me/16302590972?text=Hi%20WebMapNet%2C%20" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" href="mailto:rafis@webmapnet.com?subject=Trucking%20marketing">Email</a></div>
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 WebMapNet</span>
-    <span>SEO &middot; Google Ads &middot; Websites for trucking companies &middot; <a href="/privacy">Privacy Policy</a></span>
+    <span>&copy; 2026 WebMapNet &middot; <a href="tel:+16302590972">(630) 259-0972</a></span>
+    <span>SEO + Google Ads &middot; Google Maps &middot; Network &middot; for trucking companies &middot; <a href="/privacy">Privacy Policy</a></span>
   </div>
 </footer>
 <script>
-document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+document.querySelectorAll('a[href^="mailto:"],a[href^="tel:"],a[href^="https://wa.me/"]').forEach(function(a){
   a.addEventListener('click',function(){
-    gtag('event','generate_lead',{lead_source:a.closest('#check')?'free_site_check':'contact_email'});
+    var h=a.getAttribute('href');
+    gtag('event','generate_lead',{
+      lead_source:a.closest('#check')?'free_site_check':(a.closest('#network')?'network_quote':(a.closest('header')?'header':(a.closest('.mbar')?'mobile_bar':'contact'))),
+      method:h.indexOf('tel:')===0?'call':(h.indexOf('wa.me')>-1?'whatsapp':'email')
+    });
   });
 });
 </script>
