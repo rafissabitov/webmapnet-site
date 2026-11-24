@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NDSN3BHN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WebMapNet | SEO, Google Ads &amp; Websites for Trucking Companies</title>
@@ -256,5 +263,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <span>SEO &middot; Google Ads &middot; Websites for trucking companies</span>
   </div>
 </footer>
+<script>
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+  a.addEventListener('click',function(){
+    gtag('event','generate_lead',{lead_source:a.closest('#check')?'free_site_check':'contact_email'});
+  });
+});
+</script>
 </body>
 </html>
