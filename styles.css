@@ -95,3 +95,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .dircard{display:flex;flex-direction:column}
 .dircard .more{margin-top:auto;padding-top:16px;font-weight:600}
 .dircard ul{margin:12px 0 0}
+.finds.plain li{padding-left:16px}
+.finds.plain li:before{content:none}
+@media (max-width:1280px){.nav nav a{margin-left:14px}}
