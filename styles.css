@@ -98,9 +98,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .finds.plain li{padding-left:16px}
 .finds.plain li:before{content:none}
 @media (max-width:1280px){.nav nav a{margin-left:14px}}
-.nav nav a.lang{font-weight:700;font-size:13px;border:1px solid var(--line);border-radius:6px;padding:4px 8px}
-.nav nav a.lang{display:inline-block!important}
-@media (max-width:720px){.nav nav a.btn.wa{display:none}.nav nav a.lang{margin-left:10px}}
-@media (max-width:380px){.nav nav a.lang{margin-left:6px;padding:3px 6px}.brand{font-size:16px;gap:6px}.brand svg{width:24px;height:24px}.nav nav a.btn{padding:8px 10px;font-size:13px}}
 .card p.pq,.pq{color:#b42318;font-size:14px;font-weight:700;margin:0 0 8px;text-transform:none}
 .card.prob h3{font-size:18px;margin:0}
+.nav nav a.lang{display:inline-flex!important;align-items:center;justify-content:center;width:32px;height:32px;padding:0;margin-left:12px;border:1px solid var(--line);border-radius:8px;font-size:11px;font-weight:700;letter-spacing:.4px;color:var(--ink2);text-decoration:none;flex:none;transition:border-color .15s,color .15s,background .15s}
+.nav nav a.lang:hover,.nav nav a.lang:focus-visible{border-color:var(--ink);color:var(--ink);background:#fff}
+@media (max-width:720px){.nav nav a.btn.wa{display:none}.nav nav a.lang{margin-left:8px}}
+@media (max-width:380px){.nav nav a.lang{width:28px;height:28px;font-size:10px;margin-left:6px}}
+@media (max-width:380px){.brand{font-size:16px;gap:6px}.brand svg{width:24px;height:24px}.nav nav a.btn{padding:8px 10px;font-size:13px}}
