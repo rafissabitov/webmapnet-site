@@ -105,3 +105,5 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (max-width:720px){.nav nav a.btn.wa{display:none}.nav nav a.lang{margin-left:8px}}
 @media (max-width:380px){.nav nav a.lang{width:28px;height:28px;font-size:10px;margin-left:6px}}
 @media (max-width:380px){.brand{font-size:16px;gap:6px}.brand svg{width:24px;height:24px}.nav nav a.btn{padding:8px 10px;font-size:13px}}
+.nav .short{display:none}
+@media (max-width:380px){.nav .short{display:inline}}
